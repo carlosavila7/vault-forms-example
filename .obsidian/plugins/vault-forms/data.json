@@ -1,0 +1,110 @@
+{
+  "forms": [
+    {
+      "id": "Current-date-time-mfk0t59l",
+      "active": true,
+      "formFields": [
+        {
+          "type": "date",
+          "name": "Current date",
+          "className": "current-date",
+          "description": {
+            "expressionParams": {}
+          },
+          "placeholder": {
+            "expressionParams": {}
+          },
+          "hideExpression": {
+            "expressionParams": {}
+          },
+          "content": {
+            "expressionParams": {
+              "expression": "{{ new Date() }}"
+            }
+          },
+          "required": true,
+          "writeToOutputNote": true
+        },
+        {
+          "type": "time",
+          "name": "Current time",
+          "className": "current-time",
+          "description": {
+            "expressionParams": {}
+          },
+          "placeholder": {
+            "expressionParams": {}
+          },
+          "hideExpression": {
+            "expressionParams": {}
+          },
+          "content": {
+            "expressionParams": {
+              "expression": "{{ new Date() }}"
+            }
+          },
+          "required": true,
+          "writeToOutputNote": true
+        }
+      ],
+      "title": "Current date time",
+      "path": "path/"
+    },
+    {
+      "id": "Dropdown-options-expression-mfjzqb9r",
+      "active": true,
+      "formFields": [
+        {
+          "type": "dropdown",
+          "name": "Reference file",
+          "className": "reference-file",
+          "description": {
+            "expressionParams": {}
+          },
+          "placeholder": {
+            "expressionParams": {}
+          },
+          "hideExpression": {
+            "expressionParams": {}
+          },
+          "content": {
+            "expressionParams": {}
+          },
+          "required": true,
+          "writeToOutputNote": true,
+          "options": {
+            "expressionParams": {
+              "expression": "{{ %%dictionary%%[\"property-array\"] }}"
+            }
+          }
+        },
+        {
+          "type": "dropdown",
+          "name": "Reference folder",
+          "className": "reference-folder",
+          "description": {
+            "expressionParams": {}
+          },
+          "placeholder": {
+            "expressionParams": {}
+          },
+          "hideExpression": {
+            "expressionParams": {}
+          },
+          "content": {
+            "expressionParams": {}
+          },
+          "required": true,
+          "writeToOutputNote": true,
+          "options": {
+            "expressionParams": {
+              "expression": "{{ %%Files/%% }}"
+            }
+          }
+        }
+      ],
+      "title": "Dropdown options expression",
+      "path": "path/"
+    }
+  ]
+}
